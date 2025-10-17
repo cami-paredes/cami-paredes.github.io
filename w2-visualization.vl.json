@@ -1,0 +1,22 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "CPI US.",
+  "data": {
+    "url": "https://raw.githubusercontent.com/camila-1300/camila-1300.github.io/refs/heads/main/CPIAUCSL_PC1.csv"
+  },
+  "mark": {"type": "line", "strokeWidth": "1", "color": "#9842f5"},
+  "title": {
+    "text": "CPI US",
+    "subtitle": ["Average US city"],
+    "anchor": "middle"
+  },
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "axis": {"title": "", "grid": false}
+    },
+    "y": {"field": "value", "type": "quantitative"}
+  },
+  "config": {}
+}
