@@ -27,16 +27,12 @@
     <figure id="chart1"></figure>
   </section>
 
-  <script>
-  const chartSpec = "https://raw.githubusercontent.com/cami-paredes/cami-paredes.github.io/refs/heads/main/w2-visualization.vl.json";
-  vegaEmbed('#chart1', chartSpec);
-</script>
-
+<script>
+    const chartSpec = "https://raw.githubusercontent.com/cami-paredes/cami-paredes.github.io/refs/heads/main/w2-visualization.vl.json";
     vegaEmbed('#chart1', chartSpec)
-      .then(function(result) {
-        console.log("Chart loaded!");
-      })
+      .then(function(result) { console.log("Chart loaded!"); })
       .catch(console.error);
   </script>
 </body>
+  
 </html>
