@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Camila Paredes | Data Visualisation Portfolio</title>
+
+  <!-- Link your CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Vega Libraries -->
+  <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -14,21 +16,27 @@
 <body>
   <h1>Camila Paredes</h1>
   <h2>PP434</h2>
+  <p>This is my website project for Automated Data Visualisation.</p>
 
-  <p>This is my website project for Automated Data Visualisation</p>
-
+  <!-- Section for the chart -->
   <section>
     <div class="chart-description">
       <h3>Example Chart</h3>
-      <p>This chart demonstrates Vega-Lite embedding from a JSON spec.</p>
+      <p>This chart is embedded from my JSON file using Vega-Lite.</p>
     </div>
     <figure id="chart1"></figure>
   </section>
 
   <script>
-    // Replace with your actual JSON chart file link later
-    const chartSpec = "https://raw.githubusercontent.com/cami-paredes/cami-paredes.github.io/main/chart1.json";
-    vegaEmbed('#chart1', chartSpec);
+  const chartSpec = "https://raw.githubusercontent.com/cami-paredes/cami-paredes.github.io/refs/heads/main/w2-visualization.vl.json";
+  vegaEmbed('#chart1', chartSpec);
+</script>
+
+    vegaEmbed('#chart1', chartSpec)
+      .then(function(result) {
+        console.log("Chart loaded!");
+      })
+      .catch(console.error);
   </script>
 </body>
 </html>
