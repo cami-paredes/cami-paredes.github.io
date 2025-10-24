@@ -1,5 +1,16 @@
-<style> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Camila Paredes | Data Visualisation Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
   
+  <meta charset="UTF-8">
+  <style> 
 body { background-color: #0047AB; /* cobalt blue background */ 
       color: #FFFFFF;           /* white text */
       font-family:'Times New Roman', Times, serif; /* font style */
@@ -11,5 +22,22 @@ body { background-color: #0047AB; /* cobalt blue background */
 <h2> PP434 </h2>
 
 <p1> This is my website project for Automated Data Visualisation </p1> 
- 
 
+ <!DOCTYPE html>
+<html lang="en">
+
+  <section>
+    <div class="chart-description">
+      <h3>Example Chart</h3>
+      <p>This chart demonstrates Vega-Lite embedding from a JSON spec.</p>
+    </div>
+    <figure id="chart1"></figure>
+  </section>
+
+  <script>
+    // Replace with your own JSON file link later
+    const chartSpec = "https://raw.githubusercontent.com/cami-paredes/cami-paredes.github.io/main/chart1.json";
+    vegaEmbed('#chart1', chartSpec);
+  </script>
+</body>
+</html>
